@@ -2,8 +2,8 @@ pipeline {
   agent any
   environment {
     registry = "r0g3rc/python-jenkins-app"
-    registryCredential = 'dockerhub'
-    githubCredential = 'github'
+    registryCredential = 'r0g3rc'
+    githubCredential = 'R0g3rG1t'
   }
   stages {
     stage('Checkout') {

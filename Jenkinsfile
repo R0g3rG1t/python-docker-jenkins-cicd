@@ -16,6 +16,7 @@ pipeline {
         sh "pip install pytest"
         sh "pip install flask"
       }
+    }
     stage('Test') {
       steps {
         sh "pytest test_app.py"

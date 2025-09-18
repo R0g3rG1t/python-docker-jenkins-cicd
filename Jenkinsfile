@@ -11,6 +11,11 @@ pipeline {
         git branch: 'main', credentialsId: githubCredential, url: 'https://github.com/R0g3rG1t/python-docker-jenkins-cicd.git'
       }
     }
+    stage('Install pytest and flask') {
+      steps {
+        sh "pip install pytest"
+        sh "pip install flask"
+      }
     stage('Test') {
       steps {
         sh "pytest test_app.py"
